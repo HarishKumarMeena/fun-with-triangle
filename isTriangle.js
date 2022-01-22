@@ -12,8 +12,11 @@ isTriangleButton.addEventListener("click", function clickHandler() {
     var angleSum = parseInt(angleOne.value) + parseInt(angleTwo.value) + parseInt(angleThree.value);
     result.style.display = "block";
 
-    if (angleOne.value <= 0 || angleTwo.value <= 0 || angleThree.value <= 0)
+    if (angleOne.value <= 0 || angleOne.value > 360 || angleTwo.value <= 0 || angleTwo.value > 360|| angleThree.value <= 0 || angleThree.value > 360)
         result.innerHTML = "OOPS! 😌 it's not a triangle";
+
+    else if((360 - angleOne.value + 360 - angleTwo.value + 360 - angleThree.value) === 180)
+        result.innerHTML = "Yep! it's a triangle 😤";
 
     else if (angleSum === sumOfAnglesInTriangle)
         result.innerHTML = "Yep! it's a triangle 😤";
