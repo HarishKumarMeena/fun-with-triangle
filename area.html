@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with triangle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation">
+
+        <ul class="list-non-bullet nav-pills">
+
+            <li class="list-item-inline">
+                <a class="link" href="index.html">IsTriangle?</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="quiz.html">Quize</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="hypotenuse.html">Hypotenuse</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="area.html">Area</a>
+            </li>
+        </ul>
+    </nav>      
+
+    <header class="page">
+        <h1 class="page-heading">Check Area of Triangle</h1>
+    </header>
+    
+    <div class="container">
+        <div class="input-and-label">
+            <label for="base" class="input-label">Base(cm)</label>
+            <input type="number" id="base" class="input-text">
+        </div>
+
+        <div class="input-and-label">
+            <label for="height" class="input-label">Height(cm)</label>
+            <input type="number" id="height" class="input-text">
+        </div>
+
+        <button class="button" id="area-button">Check Area</button>
+
+        <div id="result"></div>
+    </div>
+</body>
+<script src="area.js"></script>
+</html>
